@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/*
+ #fef7e8
+ #e19f3b
+ #9d6625
+ #443110
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    --cor0:#fef7e8;
+    --cor1:#e19f3b;
+    --cor2:#9d6625;
+    --cor3:#443110;
+    --cor4:#2e210b;
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ebe3b5;
+    font-family: 'Montserrat' ;    
+}
+
+main p {
+    margin: 10px 0px ;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+header {
+   background-image: linear-gradient(to bottom, #e19f3b, #31240c );
+   min-height: 150px;
+   text-align: center;
+   padding-top: 15px;
+  
+  
+  /* display:flex;
+   flex-direction: row;
+   align-items: stretch;
+   flex-wrap: wrap;
+   justify-content:center;
+   align-content: flex-start;
+   margin: auto;
+   */
+}
+
+
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content > h1 {
+    color: ;
+    font-size: 3em;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.185);
+}
+
+header > h1 {
+    color:white;
+    margin: 0 20px 0 0;
+/*     max-width: 300px;
+    max-height: 50px;
+    margin-bottom: 20px; */
+
+    font-family: 'Montserrat';
+    font-size: 3em;
+    text-shadow: 3px 2px 0px rgba(255, 255, 255, 0.24);
+
+/*     display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+
+    position: relative;
+    left: 200px; */
+    
+}
+
+
+header img {
+    max-width: 120px;
+    max-height: 50px;
+    margin-bottom: 4px;
+    /* padding-bottom: 4px; */
+
+/*  display: flex;
+    position: relative;
+    left: 200px; */
+    
+    
+}
+
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    max-width: 350px;
+    margin: 0px auto -1px;
+    padding: 10px 10px; 
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.205);
+}
+
+
+nav {
+    background-color: #31260e;
+    padding: 10px;
+    padding-right: 0px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav > a {
+    color: white;
+    padding: 10px 35px 10px 35px;
+    margin: auto;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: black;
+
+}
+
+main {
+    background-color:  #ffffff;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main > article > h1 {
+    color: #2e210b;
+    text-align: start;
+    
+}
+
+main > article > aside > h3 {
+    background-color: #31260e;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main img.herodoto {
+        width: 50%;
+        display: block;
+        margin: auto;
+}
+
+main img.linhadotempo {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-color:#ebe3b5;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.164);
+
+}
+
+aside > ul {
+    list-style: '📕';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > ul > a {
+    text-decoration: none;
+    color: #2e210b;
+}
+
+div.video {
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+
+    position: relative;
+    padding-bottom: 55%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top:5%;
+    left:2.5%;
+    width:95%;
+    height:95%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #2e210b;
+    color: #ebe3b5;
+    text-align: center;
+    padding-bottom: 15
+    px;
+}
+
+@media (max-wedith: 600px) {
+    nav > a {
+        padding: 10px 20px; /* Ajuste o padding para links em telas menores */
+        margin: 5px 0; /* Ajuste a margem para manter o espaçamento */
+        flex: 1 1 100%;
+    }
+}
